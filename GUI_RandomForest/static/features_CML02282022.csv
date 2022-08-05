@@ -1,0 +1,14 @@
+﻿feature,min_value,max_value,initial_value,show_name,delta_feature,description,units,comments,color_r,color_g,color_b,group
+fv_pa_class,0,0,fv_pa_class_cardio,PA.TYPE,0,Physical activity type , ,"If 1, the rest PA classes should be zero",73,116,99,PA
+f_pa_activity_duration_min,5,86,31,PA.DURATION,5,Physical activity duration ,[min],,73,116,99,PA
+f_pa_activity_intensity_kcal_per_min,2.3,14.4,5.4,PA.INTENSITY,0.5,Physical activity intensity ,[kcal/min],,73,116,99,PA
+f_pa_activity_time_of_day_hour,0,23,12,PA.HOUROFDAY,1,Physical activity time of day,[hour],Calculated as cos(2*pi*hour/24). Better to ask for hour and calculate feature internally.,73,116,99,PA
+f_pa_time_since_prev_pa_event_hr,1,141,24,PA.TIMESINCEPA,1,Time since previous physical activity session ,[hours],,73,116,99,PA
+f_glucose_variability_lback_24h,0.163,0.451,0.284,GLUCOSE.CV.24H.PRIOR,0.05,Glucose variability 24 hours prior, ,,201,111,75,Glucose
+f_lbgi_lback_24h,0.008,3.123,0.694,GLUCOSE.LBGI.24H.PRIOR,0.05,Low blood glucose index 24 hours prior, ,,201,111,75,Glucose
+f_proxy_carbs_2h_prior_ref_24h,-0.234,0.809,0.166,GLUCOSE.EXCURSION.2H.PRIOR,0.05,Glucose excursion 2 hours prior , ,,201,111,75,Glucose
+f_glucose_roc_lback_30min,-1.266,2.032,0.067,GLUCOSE.TREND.30MIN.PRIOR,0.05,Glucose rate of change 30 minutes prior,[mg/dL/min],,201,111,75,Glucose
+f_glucose_start,80,251,138,GLUCOSE.CGM.START,1,Glucose at the start of physical activity,[mg/dL],,201,111,75,Glucose
+f_iob_start_norm_by_estTDIR,0.042,0.230,0.101,INSULIN.IOBTOTDIR.START,0.02,Ratio of insulin on board to TDIR, ,,10,73,90,Insulin
+f_demographics_age,21,57,39,DEMOGRAPHICS.AGE,1,Age,[years],,249,209,129,Demographics
+f_clinical_years_with_t1d,4,40,21,CLINICAL.YEARST1D,1,Years living with T1D,[years],,222,130,38,Clinical
